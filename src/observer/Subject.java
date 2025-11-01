@@ -1,4 +1,7 @@
-package observer;
+package batyrgame.observer;
 
-public class Subject {
+public interface Subject {
+    void registerObserver(Observer observer);
+    void removeObserver(Observer observer);
+    void notifyObservers(String event);
 }

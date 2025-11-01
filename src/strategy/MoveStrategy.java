@@ -1,4 +1,6 @@
-package strategy;
+package batyrgame.strategy;
 
-public class MoveStrategy {
+public interface MoveStrategy {
+    double move(double currentX);
+    String getName();
 }

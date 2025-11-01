@@ -1,4 +1,13 @@
-package strategy;
+package batyrgame.strategy;
 
-public class MoveLeft {
+public class MoveLeft implements MoveStrategy {
+    @Override
+    public double move(double currentX) {
+        return currentX - 10;
+    }
+
+    @Override
+    public String getName() {
+        return "Left";
+    }
 }

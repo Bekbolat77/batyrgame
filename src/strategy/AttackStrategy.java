@@ -1,4 +1,6 @@
-package strategy;
+package batyrgame.strategy;
 
-public class AttackStrategy {
+public interface AttackStrategy {
+    int attack();
+    String getName();
 }
